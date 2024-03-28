@@ -19,7 +19,7 @@ driver = webdriver.Chrome(options=options, service=ChromeService(ChromeDriverMan
 
 driver.get("https://demo.wpeverest.com/user-registration/file-upload-form/")
 driver.maximize_window()
-driver.find_element(By.XPATH, "//input[@id='user_email']").send_keys("ron3@gmail.com")
+driver.find_element(By.XPATH, "//input[@id='user_email']").send_keys("ron19@gmail.com")
 driver.find_element(By.XPATH, "//input[@name='user_pass']").send_keys("QWERqwer1234!@")
 driver.find_element(By.CSS_SELECTOR, "#ur_file_1641275829 > div > span.user-registration-file-upload-title").click()
 time.sleep(3)
@@ -34,3 +34,5 @@ x = driver.find_element(By.XPATH, "//*[@id='ur-submit-message-node']/ul").text
 
 print(x)
 print("File uploading is shown")
+
+
